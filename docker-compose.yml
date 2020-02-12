@@ -2,7 +2,7 @@ version: '3'
 services:
   cronjobs:
     restart: unless-stopped
-    image: vitr:cron
+    image: vitr/cron
     container_name: cronjobs
     volumes:
       - ./jobs:/etc/crontabs/root
