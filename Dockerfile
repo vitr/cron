@@ -8,6 +8,8 @@ LABEL maintainer="vitr <vit@vitr.com.au>"
 
 RUN apk add --no-cache curl
 
+COPY ./jobs /etc/crontabs/root
+
 ######################
 #    Run crond       #
 # -f for Foreground  #
